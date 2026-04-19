@@ -1,0 +1,331 @@
+            /* Polices */
+/*Google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*Font-face*/
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Regular.woff');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Italic.woff');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Bold.woff');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype'); 
+    
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Raleway";
+    src: url('../fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway';
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+            /*------------ En-tête----------- */
+header {
+    background-color: #17abb3;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+    min-height: 30%;
+}
+
+/*Partie texte dans le header*/
+.en-tete-text {
+    display:flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+/*Photo de profil */
+header img {
+    height: 100px;
+    width: 100px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+/* Listes */
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+    width: 250px;    
+}
+
+/* Eléments (mail, adresse, téléphone, permis b) */
+header li {
+    width: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+address {
+    display: flex;
+    justify-content: center;
+    width: 105%;
+    font-style: normal;
+    font-size: small;
+}
+
+address ul li i {
+    width: 25px;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;    
+}
+
+/* p: développeur web et web mobile*/
+header p {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+/* Liens */
+header a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+            /*Contenu principal */
+main {
+    background-color: #ffffff;
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+header, main, footer {
+    /*width: 1120px;
+    margin: 0 auto;
+    margin-top: 0;
+    margin-bottom: 0;*/
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/* Titres */
+h1, h2, h3 {
+    font-family: 'Lato';    
+}
+
+h1 {
+    color : #ffffff;
+    background-color: #17abb3;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #17abb3;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #b6b1b1;
+    margin-bottom: 10px;   
+}
+
+/*Bloc 1 */
+.bloc1 {
+    width: 30%;
+    background-color: #e3e3e3;
+    min-height: 100%;
+    padding: 40px 30px;  
+}
+
+
+.bloc1 ul {
+    padding-left: 0;
+    margin-left: 0
+}
+
+.bloc1 li {
+    list-style: none; 
+}
+
+.langue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.niveau {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: initial;
+}
+
+strong {
+    padding: 5px;
+}
+
+.bloc1 span i {
+    color:#17abb3;
+    font-size: small;
+    vertical-align: center;
+}
+
+.bloc1 li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+
+}
+
+/* Parties "qualités" et "centres d'intérêt" */
+.carre {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.carre li {
+    margin-left: 10px;
+}
+.carre i {
+    color: #17abb3;
+    margin-right: 12px;
+    font-size: small;
+    vertical-align: middle;
+}
+
+/*Bloc 2*/
+.bloc2 {
+    width: 70%;
+    padding: 40px 30px;
+}
+
+.indenter, .indenter2 {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.indenter2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bloc2 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Mise en forme des articles */
+article {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.titre-date {
+    display: flex;
+    justify-content: space-between;          
+}
+
+.titre-date h3 {
+    margin: 0;
+}
+
+/*  Couleur des dates */
+.titre-date p {
+    color: #17abb3;   
+}
+
+/* Effets graphiques (dynamisme) */
+
+/*Effet 1: formation, stage et experience pro */
+article {
+    transition: all 0.3s;
+    border-left: 5px solid transparent; /* Ici "transparent", car c'est avec le ":hover" qu'on aura l'effet lors du survol */
+    padding: 8px;
+}
+
+article:hover {
+    background-color: #e3e3e3;
+    border-left: 5px solid #17abb3;
+}
+
+/* Effet 2: photo de profil */
+header img {
+    transition: 0.3s;
+}
+
+header img:hover {
+    cursor: zoom-in;
+    transform: scale(1.05); /* l'image qui grossit */
+}
+
+/* Effet 3: icônes réseaux sociaux */
+footer a {
+    transition: opacity 0.2s;
+    opacity: 1;
+}
+
+footer a:hover {
+    opacity: 0.7;
+}
+
+
+            /*Pied de page*/
+footer {
+    background-color: #17abb3;
+    display: block;
+    align-content: center;
+    text-align: center;
+    min-height: 15%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
